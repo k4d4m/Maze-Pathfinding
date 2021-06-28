@@ -1,0 +1,36 @@
+Shortest path finding AI
+
+Solution #1
+For solving the AI problem I've chosen an approach closer to human 
+thinking, instead of brute-forcing through all possible steps. 
+Steps:
+- Based on the player’s position, the AI creates a blueprint 
+around itself, discovering the current sector's available 
+options before choosing one. 
+- While making a decision the AI is placed to the appropriate
+location, based on the decision.
+- A path is built, from its original location to the destination, 
+and it is stored in its step history.
+- After making a decision, the same process is repeated untill 
+all, potentially winning decisions are tested. 
+- The winning positions are tracked back.
+Problems:
+- Circumstantial implementation:
+This solution requires a lot more debugging then an a simpler 
+approach.
+Improvement ideas:
+- Instead of forging the steps history, the player could walk 
+through the generated path, and making sure it gets there. This 
+would validate the path as well.
+
+Solution #2
+I tried another approach, a recursive backtracking in-depth search. 
+This program is much simpler then the previous one, however it has 
+one flaw. It can not determine whether the problem can be solved or 
+not. It can only try to solve the maze until a determined depth 
+limit.
+
+Solution #3
+My 3rd solution would be using the first two step of solution#1, to 
+determine how many decisions are needed to solve the maze, and using
+this depth to solution#2’s recursion.

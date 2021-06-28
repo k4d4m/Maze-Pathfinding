@@ -1,0 +1,8 @@
+k - treasure - pick this up and reach the exit alive to win
+i - health potion - recovers hp by 1 up to 2
+c - trap - the player jumps over to the opposite side, then it becomes a wall
+a - sword - the hero can pick this up to fight enemies
+h - hero - the player, starts with 2 hp, dies on 0 hp
+x - wall - obstacle
+j - exit - if the player goes here with the treasure picked up wins, without the treasure loses
+s - enemy - if the player has sword kills it and loses 1hp, without sword the player dies
